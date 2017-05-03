@@ -1,0 +1,32 @@
+<div id="mycarousel" class="carousel slide" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+    <li [ngClass]="{'active' : slide==0}"></li>
+    <li [ngClass]="{'active' : slide==1}"></li>
+    <li [ngClass]="{'active' : slide==2}"></li>
+  </ol>
+
+  
+  <div class="carousel-inner" role="listbox">
+    <div class="item active full-screen" *ngIf='slide==0'>
+        <img class="img-responsive img-carousel" src="./assets/images/sarajevo1nn.jpg" data-color="lightblue" alt="First Image">
+    </div>
+    <div class="item active full-screen" *ngIf='slide==1'>
+        <img class="img-responsive img-carousel" src="./assets/images/sarajevo2nn.jpg" data-color="firebrick" alt="Second Image">
+    </div>
+    <div class="item active full-screen" *ngIf='slide==2'>
+        <img class="img-responsive img-carousel" src="./assets/images/sarajevo3nn.jpg" data-color="violet" alt="Third Image">
+    </div>
+  </div>
+  <img class="img-responsive logo" src="./assets/images/logo.png">
+  <button type="button" class="btn btn-outline-primary btn-lg btn-carousel" [routerLink]="['/categories']">Istraži Sarajevo!</button>
+ 
+  <a class="left carousel-control" (click)='previous()' role="button">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Prethodni</span>
+  </a>
+  <a class="right carousel-control" (click)='next()' role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Sljedeći</span>
+  </a>
+</div>

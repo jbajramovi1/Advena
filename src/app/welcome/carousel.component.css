@@ -1,0 +1,55 @@
+.full-screen {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#mycarousel{
+    height:100vh!important;
+    overflow: hidden!important;
+}
+
+.img-carousel{  
+    min-width: 100vw!important;
+    min-height: 100vh!important;
+    object-fit: cover!important;
+}
+
+.carousel-inner{
+    position: cover!important;
+    height: 100vh!important;
+    overflow: hidden!important;
+    
+}
+
+
+.logo{
+  height: 200px;
+  width: 200px;
+  top:48%;
+	left:51%;
+	transform: translate(-50%, -50%);
+  position: absolute!important;
+}
+
+.btn-carousel{
+  top:70%;
+	left:51%;
+	transform: translate(-50%, -50%);
+  position: absolute!important;
+  width: 250px;
+  height: 40px;
+  font-family: Century Gothic;
+  font-size: 15px;
+  
+  text-shadow: 1px 2px 1px #202030;
+  background-color:transparent;
+  transition: all .5s;
+  color : #f7ce3e;
+  border-color: #f7ce3e;
+}
+
+.btn-carousel:hover{
+  color: white;
+  background-color: #f7ce3e;
+}
